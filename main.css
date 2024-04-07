@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    --black: #141414;
+    --dark-grey: #1F1F1F;
+    --grey: #333333;
+    --neon-green: #C4F82A;
+    --white: #FFFFFF;
+
+    background-color: var(--black);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    
+    font-family: "Inter";
+    font-style: normal;
+    color: var(--white);
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    min-width: 327px;
+    max-width: 384px;
+    background-color: var(--dark-grey);
+    border-radius: 12px;
+    padding: 24px;
+}
+
+@media (min-width: 450px) {
+    .card {
+        padding: 40px;
+    }
+}
+
+.user-avatar {
+    border-radius: 50%;
+    width: 88px;
+}
+
+.user-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.user-location {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--neon-green);
+    line-height: 150%;
+}
+
+.user-bio {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    gap: 12px;
+}
+
+.social-links span {
+    width: 100%;
+    background-color: var(--grey);
+    padding: 12px;
+    border-radius: 8px;
+    
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 150%;
+    transition: all .2s ease;
+}
+
+.social-links span:hover {
+    background-color: var(--neon-green);
+    color: var(--grey);
+}
+
+.attribution { 
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 11px;
+    color: var(--black); 
+    text-align: center; 
+    background-color: rgb(240, 240, 240);
+    padding: 8px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
