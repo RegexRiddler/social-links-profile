@@ -74,7 +74,7 @@ body {
     gap: 16px;
 }
 
-.social-links span {
+.social-links a {
     width: 100%;
     background-color: var(--grey);
     padding: 12px;
@@ -83,10 +83,10 @@ body {
     font-size: 0.875rem;
     font-weight: 700;
     line-height: 150%;
-    transition: all .3s ease;
+    transition: all .2s ease;
 }
 
-.social-links span:hover {
+.social-links a:hover {
     background-color: var(--neon-green);
     color: var(--grey);
 }
